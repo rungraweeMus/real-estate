@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
 export const Buttton = styled(Link)`
-    background: ${({primary}) => (primary? '#000d1a' : '#CD853F' )};
+    /* background: ${({primary}) => (primary? '#000d1a' : '#CD853F' )}; */
     white-space: nowrap;
     outline: none;
     border: none;
@@ -13,9 +13,9 @@ export const Buttton = styled(Link)`
     transition: 0.3s;
     display: flex;
     justify-content: center;
-    padding: ${({big}) => (big? '16px 40px' : '14px 24px' )};
+    /* padding: ${({big}) => (big? '16px 40px' : '14px 24px' )}; */
     color: ${({primary}) => (primary? '#fff' : '#000d1a' )};
-    font-size: ${({big}) => (big? '20px' : '14px' )};
+    /* font-size: ${({big}) => (big? '20px' : '14px' )}; */
 
     &:hover {
         transform: translateY(-2px)

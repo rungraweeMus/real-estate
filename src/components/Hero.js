@@ -66,8 +66,8 @@ const HeroContent = styled.div`
     color: #FFF;
 
     h1 {
-        font-size: clamp(1rem, 8vw, 1.5rem);
-        font-weight: 400;
+        /* font-size: clamp(1rem, 8vw, 1.5rem); */
+        /* font-weight: 400; */
         text-transform: uppercase;
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
         text-align: left;
@@ -167,9 +167,9 @@ const Hero = ({slides}) => {
                            <HeroSlider>
                                <HeroImage src={slide.images} alt={slide.alt}/>
                                 <HeroContent>
-                                    <h1>{slide.title}</h1>
-                                    <p>{slide.prices}</p>
-                                    <Buttton to={slide.path} primary = {true} css={`max-width: 160px`}>
+                                    <h1 className="text-xl font-extrabold md:text-3xl">{slide.title}</h1>
+                                    <p className="text-base font-extrabold md:text-xl">{slide.prices}</p>
+                                    <Buttton to={slide.path} className="px-3 py-2 rounded-lg shadow-md opacity-75 w-min h-1/3 bg-gray-50" css={`max-width: 160px`}>
                                         {slide.label}
                                         <Arrow/>
                                     </Buttton>
