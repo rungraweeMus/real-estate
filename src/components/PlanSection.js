@@ -14,7 +14,7 @@ const PlanSection = () => {
                 <div class="flex-grow pl-6">
                   <h2 class="tracking-widest text-xs title-font font-medium text-indigo-500 mb-1">GALLERY</h2>
                   <h1 class="title-font text-xl font-medium text-gray-900 mb-3">One of the best venues</h1>
-                  <p class="leading-relaxed mb-5">There are many beaches with luxury accommodations in Phuket that couples can choose to get married.</p>
+                  <p class="leading-relaxed mb-5 text-base">There are many beaches with luxury accommodations in Phuket that couples can choose to get married.</p>
                   <a class="inline-flex items-center">
                     <img alt="blog" src="https://dummyimage.com/103x103" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center"/>
                     <span class="flex-grow flex flex-col pl-3">

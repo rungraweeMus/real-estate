@@ -72,11 +72,13 @@ const HeroContent = styled.div`
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
         text-align: left;
         margin-bottom: 0.8rem;
+        font-family: 'Lora', serif;
     }
 
     p {
         margin-bottom: 1.2rem;
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+        font-family: 'Lora', serif;
     }
 `
 const Arrow = styled(IoMdArrowRoundForward)`
@@ -94,9 +96,9 @@ const SliderButtons = styled.div`
 const arrowButtons = css`
     width: 50px;
     height: 50px;
-    color: #FFF;
+    color: #FFF8DC;
     cursor: pointer;
-    background: #000d1a;
+    background: #D2B48C;
     border-radius: 50px;
     padding: 10px;
     margin-right: 1rem;

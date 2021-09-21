@@ -23,6 +23,10 @@ const PortWrapper = styled.div`
   position: relative;
 `;
 
+const Head = styled.h1`
+  font-family: 'Lora', serif;
+`
+
 const Portfolio = () => {
   return (
     <div className="bg-gray-100"> 
@@ -50,7 +54,7 @@ const Portfolio = () => {
       </section> */}
 
       <PortSection>
-        <PortWrapper className="">
+        <PortWrapper>
           <img
             className="object-cover w-full rounded-lg shadow-2xl lg:w-10/12 lg:h-screen lg:pt-14"
             src={portPicture}
@@ -64,9 +68,9 @@ const Portfolio = () => {
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Master Cleanse Reliac Heirloom</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
     </div> */}
-          <div class="flex flex-wrap -m-4 text-center">
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-indigo-200 bg-opacity-60 hover:bg-gray-50">
+          <div className="flex flex-wrap -m-4 text-center">
+            <div className="w-full p-4 md:w-1/4 sm:w-1/2">
+              <div className="px-4 py-6 bg-indigo-200 border-2 border-gray-200 rounded-lg bg-opacity-60 hover:bg-gray-50">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -79,14 +83,14 @@ const Portfolio = () => {
                   <path d="M8 17l4 4 4-4m-4-5v9"></path>
                   <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
                 </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">
+                <h2 className="text-3xl font-medium text-gray-900 title-font">
                   2.7K
                 </h2>
-                <p class="leading-relaxed">Downloads</p>
+                <p className="leading-relaxed">Downloads</p>
               </div>
             </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:bg-indigo-50 bg-gray-200">
+            <div className="w-full p-4 md:w-1/4 sm:w-1/2">
+              <div className="px-4 py-6 bg-gray-200 border-2 border-gray-200 rounded-lg hover:bg-indigo-50">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -100,14 +104,14 @@ const Portfolio = () => {
                   <circle cx="9" cy="7" r="4"></circle>
                   <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"></path>
                 </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">
+                <h2 className="text-3xl font-medium text-gray-900 title-font">
                   1.3K
                 </h2>
-                <p class="leading-relaxed">Users</p>
+                <p className="leading-relaxed">Users</p>
               </div>
             </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-indigo-200 bg-opacity-60 hover:bg-gray-50">
+            <div className="w-full p-4 md:w-1/4 sm:w-1/2">
+              <div className="px-4 py-6 bg-indigo-200 border-2 border-gray-200 rounded-lg bg-opacity-60 hover:bg-gray-50">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -120,14 +124,14 @@ const Portfolio = () => {
                   <path d="M3 18v-6a9 9 0 0118 0v6"></path>
                   <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
                 </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">
+                <h2 className="text-3xl font-medium text-gray-900 title-font">
                   74
                 </h2>
-                <p class="leading-relaxed">Files</p>
+                <p className="leading-relaxed">Files</p>
               </div>
             </div>
-            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-              <div class="border-2 border-gray-200 px-4 py-6 rounded-lg hover:bg-indigo-50 bg-gray-200">
+            <div className="w-full p-4 md:w-1/4 sm:w-1/2">
+              <div className="px-4 py-6 bg-gray-200 border-2 border-gray-200 rounded-lg hover:bg-indigo-50">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -139,10 +143,10 @@ const Portfolio = () => {
                 >
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
-                <h2 class="title-font font-medium text-3xl text-gray-900">
+                <h2 className="text-3xl font-medium text-gray-900 title-font">
                   46
                 </h2>
-                <p class="leading-relaxed">Places</p>
+                <p className="leading-relaxed">Places</p>
               </div>
             </div>
           </div>
@@ -152,10 +156,10 @@ const Portfolio = () => {
       <section className="text-gray-600 body-font">
         <div className="container flex flex-wrap px-5 py-8 mx-auto lg:py-8">
         <div class="text-center mb-10 container mx-auto">
-      <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Raw Denim Heirloom Man Braid</h1>
-      <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
-      <div class="flex mt-6 justify-center">
-        <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+      <Head className="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font">Raw Denim Heirloom Man Braid</Head>
+      <p className="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-gray-500s">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+      <div className="flex justify-center mt-6">
+        <div className="inline-flex w-16 h-1 bg-indigo-500 rounded-full"></div>
       </div>
     </div>
           <div className="flex flex-wrap -m-1 overflow-y-hidden md:-m-2">

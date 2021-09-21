@@ -26,6 +26,7 @@ const NavLink = css`
   cursor: pointer;
   text-decoration: none;
   text-shadow: 0px 0px 20px #fff;
+  font-family: 'Lora', serif;
 `;
 
 const Logo = styled(Link)`
@@ -100,7 +101,7 @@ const NavBar = ({ toggle }) => {
       <NavMenu className="text-gray-500">
         {menuData.map((item, index) => (
           <NavMenuLinks
-            className="text-base text-indigo-400 rounded-md font-mediumedium hover:bg-gray-100"
+            className="text-lg text-indigo-400 rounded-md font-mediumedium hover:bg-gray-100"
             exact={`${item.link} == '/'? 'true' : 'false'`}
             to={item.link}
             key={index}
